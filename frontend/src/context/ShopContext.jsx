@@ -12,7 +12,7 @@ const ShopContextProvider = (props) => {
   const [showSearch, setShowSearch] = useState(false);
   const [cartItems, setCartItems] = useState({});
   const navigate = useNavigate();
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = "https://mern-stack-f1gd.onrender.com";
   const [products, setProducts] = useState([]);
   const [token, setToken] = useState("");
 
