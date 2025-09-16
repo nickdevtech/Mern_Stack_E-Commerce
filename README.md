@@ -1,7 +1,7 @@
 # 🛒 React E-Commerce Application
 
 A **full-stack e-commerce platform** built with **React, Node.js, Express, MongoDB, and Stripe**.  
-It enables users to browse and search products, filter by categories, manage carts & wishlists, write reviews, and securely checkout with Stripe integration.
+This project enables users to browse and search products, filter by categories, manage carts and wishlists, leave reviews, and securely checkout with **Stripe integration**.
 
 🔗 **Live Demo:** [React E-Commerce App](https://frontend-utew.onrender.com)
 
@@ -9,27 +9,27 @@ It enables users to browse and search products, filter by categories, manage car
 
 ## ✨ Features
 
-- 🔐 **User Authentication** – JWT-based login & signup  
-- 🛍️ **Product Browsing** – Categories, filters & search  
-- ❤️ **Wishlist & Cart Management**  
-- ⭐ **Product Reviews & Ratings**  
-- 💳 **Secure Stripe Payments**  
-- 📱 **Responsive UI** – Built with TailwindCSS  
-- 📰 **Newsletter & Offers**  
-- 🎯 **Advanced Filtering & Sorting**  
+- 🔐 **User Authentication** – Secure JWT-based login & signup  
+- 🛍️ **Product Browsing** – Categories, advanced filtering & search  
+- ❤️ **Wishlist & Cart** – Add, update, and manage items seamlessly  
+- ⭐ **Reviews & Ratings** – Customers can rate and review products  
+- 💳 **Stripe Payments** – Fully integrated, secure checkout  
+- 📱 **Responsive UI** – Mobile-friendly with Tailwind CSS  
+- 📰 **Newsletter & Offers** – Stay connected with promotions  
+- 🎯 **Sorting & Filtering** – Price, popularity, and category filters  
 
 ---
 
 ## 🛠 Tech Stack
 
-**Frontend**
-- ⚛️ React  
-- 🎨 Tailwind CSS  
+### **Frontend**
+- ⚛️ React 18  
+- 🎨 TailwindCSS  
 - 🔀 React Router  
 - 📡 Axios  
 - 🔔 React Toastify  
 
-**Backend**
+### **Backend**
 - 🟢 Node.js  
 - 🚏 Express.js  
 - 🍃 MongoDB + Mongoose  
@@ -37,11 +37,11 @@ It enables users to browse and search products, filter by categories, manage car
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
 ```bash
 ecommerce-app/
-├── client/                  # React frontend
+├── frontend/                  # React frontend
 │   ├── public/              # Static assets
 │   ├── src/
 │   │   ├── components/      # Reusable UI components
@@ -52,9 +52,9 @@ ecommerce-app/
 │   │   └── main.jsx
 │   └── package.json
 │
-├── server/                  # Express backend
-│   ├── config/              # DB & Stripe config
-│   ├── controllers/         # API business logic
+├── backend/                  # Express backend
+│   ├── config/              # Database & Stripe config
+│   ├── controllers/         # Business logic
 │   ├── models/              # Mongoose schemas
 │   ├── routes/              # API routes
 │   ├── middleware/          # JWT & error handling
@@ -63,48 +63,69 @@ ecommerce-app/
 │
 ├── .env.example             # Environment variable template
 ├── README.md                # Documentation
-└── package.json             # Root config (if monorepo)
+└── package.json             # Root config (monorepo)
+```
 
-🚀 Installation & Setup
-1️⃣ Clone repo
+---
+
+## 🚀 Installation & Setup
+
+### 1. Clone the repo
+```bash
 git clone <repo-url>
 cd ecommerce-app
+```
 
-2️⃣ Install dependencies
-# Backend
-cd server && npm install
+### 2. Install dependencies
+**Backend**
+```bash
+cd server
+npm install
+```
 
-# Frontend
-cd client && npm install
+**Frontend**
+```bash
+cd client
+npm install
+```
 
-3️⃣ Setup environment variables
+### 3. Configure environment variables
+Create a `server/.env` file:
 
-Create server/.env with:
-
+```env
 MONGO_URI=your-mongodb-uri
 JWT_SECRET=your-secret-key
 STRIPE_SECRET_KEY=your-stripe-secret
 PORT=5000
+```
 
-4️⃣ Run locally
-# Backend
-cd server && npm run dev
+### 4. Run locally
+**Backend**
+```bash
+cd server
+npm run dev
+```
 
-# Frontend
-cd client && npm start
+**Frontend**
+```bash
+cd client
+npm start
+```
 
+The app will be available at 👉 [http://localhost:3000](http://localhost:3000)
 
-App runs at 👉 http://localhost:3000
+---
 
-📦 Deployment
+## 📦 Deployment
 
-Frontend: Vercel / Netlify / Render
+- **Frontend:** Vercel / Netlify / Render  
+- **Backend:** Render / Railway / Heroku  
+- **Database:** MongoDB Atlas  
 
-Backend: Render / Railway / Heroku
+---
 
-Database: MongoDB Atlas
+## 📜 License
 
-📜 License
-
-MIT License – free to use & modify 🚀
+This project is licensed under the **MIT License**.  
+You’re free to use, modify, and distribute it 🚀  
 
